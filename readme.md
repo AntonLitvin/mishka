@@ -1,3 +1,5 @@
 # Mishka
 
-Тренировочный макет, одолженный у HTMLAcademy
+[DEMO](https://antonlitvin.github.io/mishka/app/)
+
+Training responsive page, designed by HTMLAcademy
