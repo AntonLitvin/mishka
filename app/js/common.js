@@ -47,12 +47,24 @@ var swiper = new Swiper('.swiper-container', {
 	loop: true
 });
 
-//Remove map overlay
-$(function(){
-	$('.map-overlay').on('click', function() {
-		$(this).remove();
-	});
+
+//change placeholder
+function changePlaceholder(){
+	var target = $('.field__phone-email input[type="email"]');
+	var wWidth = $(window).width();
+	if (wWidth < '480') {
+		target.attr('placeholder', 'Ваш Email*');
+	} else {
+		target.attr('placeholder', 'Мы не будем спамить, честно!*');
+	}
+}
+
+changePlaceholder();
+
+$(window).resize(function() {
+	changePlaceholder();
 });
+
 
 
 

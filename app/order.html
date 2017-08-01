@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Мишка | Главная</title>
+	<title>Вязание на заказ | форма заказа</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,13 +42,13 @@
 
 		<ul class="main-nav" style="list-style-type: none">
 			<li class="main-nav__item"><a href="#1">Каталог товаров</a></li>
-			<li class="main-nav__item"><a href="order.html">Вязание на заказ</a></li>
+			<li class="main-nav__item"><a href="#1">Вязание на заказ</a></li>
 			<li class="main-nav__item  main-nav__item--small"><a href="#1">Новые поступления</a></li>
 			<li class="main-nav__item  main-nav__item--small"><a href="#1">Распродажа</a></li>
 		</ul>
 
 		<div class="page-header__logo">
-			<a href="#1" class="page-header__logo-link">
+			<a href="index.html" class="page-header__logo-link">
 				<picture>
 					<source media="(min-width: 993px)" srcset="img/logo-desktop.svg">
 					<source media="(min-width: 769px)" srcset="img/logo-tablet.svg">
@@ -87,191 +87,137 @@
 	</div>
 </header>
 
-<section class="page-intro">
-	<div class="page-intro__wrapper">
+<section class="order-intro">
+	<div class="order-intro__wrapper">
+		<h1 class="order-intro__title">Вязание на заказ</h1>
+	</div>
+</section>
 
-		<h1 class="page-intro__title">Милые штучки ручной работы для дома</h1>
 
-		<ul class="page-intro__buttons" style="list-style-type: none">
+<form action="/">
 
-			<li class="page-intro__button">
-				<a href="#1" class="page-intro__link  page-intro__link--interior">Предметы<br>интерьера
-					<svg class="page-intro__icon-interior" width="40" height="62">
-						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-interior"></use>
+	<section class="section section-type">
+		<div class="section__wrapper clearfix">
+			<h2 class="section-type__subtitle">Мы будем рады воплотить в жизнь ваши пожелания!<br>Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</h2>
+			<div class="section__legend"><span>тип</span></div>
+			<div class="section__fields radio">
+				<input type="radio" id="r1" name="form-type" checked>
+				<label class="custom__label" for="r1">Аксессуар для интерьера</label>
+				<input type="radio" id="r2" name="form-type">
+				<label class="custom__label" for="r2">Детская игрушка</label>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-color">
+		<div class="section__wrapper clearfix">
+			<h2 class="visually-hidden">Секция выбора цвета</h2>
+			<div class="section__legend section__legend--color"><span>цвет</span></div>
+			<div class="section__fields checkbox">
+
+				<input type="checkbox" id="с1" name="form-color1" checked>
+				<label class="custom__label custom__label--check" for="с1">Белый</label>
+
+				<input type="checkbox" id="с2" name="form-color2" checked>
+				<label class="custom__label custom__label--check" for="с2">Серый</label>
+
+				<input type="checkbox" id="с3" name="form-color3">
+				<label class="custom__label custom__label--check" for="с3">«Тиффани»</label>
+
+				<input type="checkbox" id="с4" name="form-color4">
+				<label class="custom__label custom__label--check" for="с4">Черный</label>
+
+				<input type="checkbox" id="с5" name="form-color5">
+				<label class="custom__label custom__label--check" for="с5">Розовый</label>
+
+				<input type="checkbox" id="с6" name="form-color6">
+				<label class="custom__label custom__label--check" for="с6">Оранжевый</label>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-name">
+		<div class="section__wrapper clearfix">
+			<h2 class="visually-hidden">ФИО</h2>
+			<div class="section__legend  section__legend--pad"><span>ФИО</span></div>
+			<div class="section__fields">
+
+				<div class="fields__wrapper">
+					<label class="label-text" for="input1">Фамилия:</label>
+					<input type="text" placeholder="Укажите фамилию*" id="input1" required>
+				</div>
+
+				<div class="fields__wrapper">
+					<label class="label-text" for="input2">Имя:</label>
+					<input type="text" placeholder="Введите Ваше имя*" id="input2" required>
+				</div>
+
+				<div class="fields__wrapper">
+					<label class="label-text" for="input3">Отчество:</label>
+					<input type="text" placeholder="Отчество, если желаете" id="input3">
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-phone">
+		<div class="section__wrapper clearfix">
+		<h2 class="visually-hidden">Номер телефона</h2>
+			<div class="section__legend  section__legend--pad"><span>Тел</span></div>
+			<div class="section__fields">
+
+				<div class="fields__wrapper field__phone-email">
+					<input type="tel" placeholder="+380 XXX XX XX*" required>
+					<svg width="25" height="25">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone"></use>
 					</svg>
-					</a>
-			</li>
+				</div>
 
-			<li class="page-intro__button">
-				<a href="#1" class="page-intro__link  page-intro__link--toys">Детские<br>игрушки
-					<svg class="page-intro__icon-toys" width="62" height="62">
-						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-toy"></use>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-email">
+		<div class="section__wrapper clearfix">
+		<h2 class="visually-hidden">адрес электронной почты</h2>
+			<div class="section__legend  section__legend--pad"><span>E-mail</span></div>
+			<div class="section__fields">
+
+				<div class="fields__wrapper field__phone-email">
+					<input type="email" placeholder="Мы не будем спамить, честно!*" required>
+					<svg width="32" height="32">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use>
 					</svg>
-					</a>
-			</li>
-
-		</ul>
-
-	</div>
-</section>
-
-<section class="week-item-section">
-	<div class="week-item-section__wrapper">
-
-		<div class="week-item">
-
-			<h2 class="week-item__title">Вязаные корзинки<span class="week-item__naming">Товар недели</span></h2>
-
-			<div class="week-item__descr">
-
-				<p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
-
-				<div class="week-item__table js-week-item__table">
-					<div class="row">
-						<div class="cell">Цвет:</div>
-						<div class="cell">«Тиффани»/серый</div>
-					</div>
-					<div class="row">
-						<div class="cell">Диаметр:</div>
-						<div class="cell">25 см</div>
-					</div>
-					<div class="row">
-						<div class="cell">Высота:</div>
-						<div class="cell">15 см</div>
-					</div>
-				</div>
-
-				<div class="week-item__order">
-					<div class="order__price">
-						<span>Цена: 550 грн.</span>
-					</div>
-					<a href="order.html" class="main-button  order-button">Заказать</a>
 				</div>
 
 			</div>
-
-			<div class="week-item__img js-week-item__img">
-				<picture>
-					<source media="(min-width: 769px)" srcset="img/triple-set@1x.jpg 1x, img/triple-set@2x.jpg 2x">
-					<img src="img/triple-set@1x.jpg" srcset="img/triple-set@1x.jpg 1x, img/triple-set@2x.jpg 2x" alt="Вязаные корзинки">
-					</picture>
-			</div>
-
 		</div>
+	</section>
 
-	</div>
-</section>
-
-<section class="about-us-section">
-	<div class="about-us-section__wrapper">
-		<div class="about-us">
-
-			<h2 class="about-us__title">Коротко о нас:</h2>
-
-			<div class="about-us__left">
-				<ul class="about-us__list" style="list-style-type: none">
-					<li class="about-us__item  about-us__item--materials">Экологически чистые материалы</li>
-					<li class="about-us__item  about-us__item--style">Скандинавский стиль по украинской цене</li>
-					<li class="about-us__item  about-us__item--likes">Увеличивает лайки на фотографиях</li>
-				</ul>
+	<section class="section section-textarea">
+		<div class="section__wrapper clearfix">
+		<h2 class="visually-hidden">Укажите Ваши пожелания</h2>
+			<div class="section__legend"><span>Доп</span></div>
+			<div class="section__fields">
+				<textarea name="textarea" placeholder="Опишите все Ваши пожелания к заказу"></textarea>
 			</div>
-
-			<div class="about-us__right">
-				<ul class="about-us__list" style="list-style-type: none">
-					<li class="about-us__item  about-us__item--handmade">Связано вручную с любовью и умилением</li>
-					<li class="about-us__item  about-us__item--prod">Поддержка отечественного производителя</li>
-					<li class="about-us__item  about-us__item--pack">Поставляется в подарочной упаковке</li>
-				</ul>
+			<div class="submit-wrapper clearfix">
+				<button type="submit" class="main-button submit-button">Отправить заказ</button>
+				<p class="field-required">Все поля являются обязательными</p>
 			</div>
-
 		</div>
-	</div>
-</section>
+	</section>
 
-<section class="reviews-section">
-	<div class="reviews-section__wrapper">
-		<div class="reviews">
+</form>
 
-			<h2 class="reviews__title">Отзывы</h2>
-
-			<div class="swiper-container">
-
-				<div class="swiper-wrapper">
-
-					<div class="reviews__item  swiper-slide">
-						<p>Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
-						<cite class="reviews-item__author-name">Анастасия Красильникова</cite>
-						<a href="#1" class="reviews-item__author-link">@misssssiskras</a>
-					</div>
-
-				</div>
-
-				<div class="slider__buttons">
-					<a href="#1" class="slider-button slider-button__prev swiper-button-prev">
-						<svg width="52" height="27">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-left-arrow"></use>
-						</svg>
-						Назад
-					</a>
-					<a href="#1" class="slider-button slider-button__next swiper-button-next">
-						<svg width="52" height="27">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-right-arrow"></use>
-						</svg>
-						Вперед
-					</a>
-				</div>
-
-			</div>
-
-			<div class="reviews-button">
-				<a href="#1" class="main-button review-button">Написать</a>
-			</div>
-
-		</div>
-	</div>
-</section>
-
-<section class="contacts-section">
-	<div class="contacts-section__wrapper">
-		<div class="contacts">
-
-			<div class="contacts__info">
-
-				<h2 class="contacts__title">Контакты</h2>
-
-				<div class="contacts__table  contacts__table--email">
-					<div class="row">
-						<div class="cell">e-mail:</div>
-						<div class="cell"><a href="info@mimimishkashop.ru">info@mimimishkashop.ru</a></div>
-					</div>
-				</div>
-
-				<div class="contacts__table  contacts__table--address">
-					<div class="row">
-						<div class="cell">адрес:</div>
-						<div class="cell">г. Киев,<br>ул. Харьковское шоссе,<br>д. 18/1, офис 101</div>
-					</div>
-				</div>
-
-			</div>
-
-			<div class="map-wrapper">
-				<div class="contacts__map"></div>
-			</div>
-
-			<div class="contacts__button">
-				<a href="#1" class="main-button contacts-button">Напишите нам</a>
-			</div>
-
-		</div>
-	</div>
-</section>
 
 <footer class="page-footer">
 	<div class="page-footer__wrapper">
 
 		<div class="footer__logo">
-			<a href="#1" class="footer__logo-link">
+			<a href="index.html" class="footer__logo-link">
 				<svg width="102" height="34">
 					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use>
 				</svg>
@@ -314,34 +260,6 @@
 </footer>
 
 <link rel="stylesheet" href="css/style.min.css">
-
-<script  async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZ-XIpk0KypAlNZO6166lGCS8rb4uOaew&callback=initMap"></script>
-
-<script>
-
-function initMap() {
-	var myLatLng = {lat: 50.434660, lng: 30.629877};
-
-	var map = new google.maps.Map(document.querySelector(".contacts__map"), {
-		zoom: 17,
-		center: myLatLng,
-		scrollwheel: false,
-		draggable: true
-	});
-
-	var image = {
-		url: "img/map-pin.svg",
-		scaledSize: new google.maps.Size(66, 100)
-};
-	var beachMarker = new google.maps.Marker({
-		position: myLatLng,
-		map: map,
-		optimized: false,
-		icon: image
-	});
-}
-
-</script>
 
 <script src="js/scripts.min.js"></script>
 <script src="js/common.js"></script>
