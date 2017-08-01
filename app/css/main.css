@@ -980,12 +980,12 @@ button.swiper-pagination-bullet {
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
   color: #444444;
-  border-bottom: 1px solid #f0b1b1; }
+  border-color: #f0b1b1; }
 
 body input:required:valid,
 body textarea:required:valid {
   color: #444444;
-  border-bottom: 1px solid #63d1bb; }
+  border-color: #63d1bb; }
 
 html, body {
   height: 100%; }
@@ -996,7 +996,8 @@ body {
   position: relative;
   line-height: 1.875;
   font-family: "OpenSansRegular", sans-serif;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  opacity: 1; }
 
 a {
   text-decoration: none; }
@@ -2089,13 +2090,13 @@ a.social-tw {
     color: #444444;
     padding: 18px;
     border: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 2px solid #000;
     -webkit-transition: all 0.25s;
     -o-transition: all 0.25s;
     transition: all 0.25s;
     outline: none; }
     .fields__wrapper input:hover, .fields__wrapper input:active, .fields__wrapper input:focus {
-      border-bottom: 1px solid #63d1bb; }
+      border-bottom: 2px solid #63d1bb; }
 
 .section-phone {
   padding-top: 37px;
@@ -2139,14 +2140,14 @@ a.social-tw {
     font-size: 18px;
     color: #444444;
     padding: 15px;
-    border: 1px solid #000;
+    border: 2px solid #000;
     -webkit-transition: all 0.25s;
     -o-transition: all 0.25s;
     transition: all 0.25s;
     outline: none;
     margin-bottom: 90px; }
     .section-textarea textarea:hover, .section-textarea textarea:active, .section-textarea textarea:focus {
-      border: 1px solid #63d1bb; }
+      border: 2px solid #63d1bb; }
 
 .submit-wrapper {
   padding-left: 175px; }

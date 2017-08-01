@@ -33,13 +33,13 @@
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
 	color: $text;
-	border-bottom: 1px solid #f0b1b1;
+	border-color: #f0b1b1;
 }
 
 body input:required:valid,
 body textarea:required:valid {
 	color: $text;
-	border-bottom: 1px solid $accent;
+	border-color: $accent;
 }
 
 html, body {
@@ -53,7 +53,7 @@ body {
 	line-height: 1.875;
 	font-family: $default-font;
 	overflow-x: hidden;
-	// opacity: 1;
+	opacity: 1;
 }
 
 a {
@@ -89,6 +89,8 @@ img {
 	clear: both;
 }
 
+
+//for styling <use> elements
 svg, svg * {
 	fill: inherit;
 	stroke: inherit;
@@ -1081,10 +1083,9 @@ a.social-tw {
 
 
 
-
-
 /** ORDER PAGE
 ================ **/
+
 
 
 .order-intro {
@@ -1279,13 +1280,13 @@ a.social-tw {
 		color: $text;
 		padding: 18px;
 		border: none;
-		border-bottom: 1px solid #000;
+		border-bottom: 2px solid #000;
 		transition: all 0.25s;
 		outline: none;
 		&:hover,
 		&:active,
 		&:focus {
-			border-bottom: 1px solid $accent;
+			border-bottom: 2px solid $accent;
 		}
 	}
 }
@@ -1341,14 +1342,14 @@ a.social-tw {
 		font-size: 18px;
 		color: $text;
 		padding: 15px;
-		border: 1px solid #000;
+		border: 2px solid #000;
 		transition: all 0.25s;
 		outline: none;
 		margin-bottom: 90px;
 		&:hover,
 		&:active,
 		&:focus {
-			border: 1px solid $accent;
+			border: 2px solid $accent;
 		}
 	}
 }
